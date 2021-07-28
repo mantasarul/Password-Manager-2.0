@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Email, Phone, Account
+from .models import AccountEmail, AccountPhone, Account
 
 # Register your models here.
 # Admin panel username: root
@@ -25,6 +25,6 @@ class AccountModel(admin.ModelAdmin):
     ]
 
 
-admin.site.register(Email, EmailModel)
-admin.site.register(Phone, PhoneModel)
+admin.site.register(AccountEmail, EmailModel)
+admin.site.register(AccountPhone, PhoneModel)
 admin.site.register(Account, AccountModel)
